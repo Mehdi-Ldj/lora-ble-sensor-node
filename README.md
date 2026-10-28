@@ -6,15 +6,15 @@ one board.
 
 ![Rev A rendered board](docs/renders/board-3d-iso.png)
 
-## Interactive design viewer
+## Design viewer
 
-| Schematic | PCB |
+| Schematic | Board |
 |:---:|:---:|
-| [Open schematic in KiCanvas →][kicanvas-sch] | [Open PCB in KiCanvas →][kicanvas-pcb] |
+| [Schematic, six pages (PDF)](docs/renders/schematic-rev-a.pdf) | [Open the board in KiCanvas][kicanvas-pcb] |
 
-Read-only browser viewer — no KiCad installation required.
+The PDF carries the whole hierarchy. KiCanvas is a read-only browser viewer for
+the board, with no KiCad installation required.
 
-[kicanvas-sch]: https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMehdi-Ldj%2Flora-ble-sensor-node%2Ftree%2Fmain%2Fhardware%2Frev-a
 [kicanvas-pcb]: https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMehdi-Ldj%2Flora-ble-sensor-node%2Fblob%2Fmain%2Fhardware%2Frev-a%2Flora-node.kicad_pcb
 
 ## Overview
