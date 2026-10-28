@@ -145,4 +145,8 @@ CPL — is attached to the release rather than committed here.
 ## Status
 
 **Rev A is frozen and has not been fabricated yet.** The design is complete
-through DRC, ERC and schematic/board parity. 
+through DRC, ERC and schematic/board parity.
+
+## Licence
+
+Released under the [CERN Open Hardware Licence Version 2 – Permissive](LICENSE).
