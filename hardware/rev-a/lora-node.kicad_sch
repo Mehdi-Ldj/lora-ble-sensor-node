@@ -1,0 +1,451 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60")
+	(paper "A3")
+	(title_block
+		(title "LoRa/BLE Sensor Node - Root")
+		(date "2026-10-24")
+		(rev "A")
+		(company "Solo Engineering")
+		(comment 1 "Off-grid agricultural sensor node - 868 MHz LoRa + BLE")
+	)
+	(lib_symbols)
+	(text "5  Sensors"
+		(exclude_from_sim no)
+		(at 25 198 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "025c89f5-3519-555f-8272-7786f0b8a8a5")
+	)
+	(text "4  Radio"
+		(exclude_from_sim no)
+		(at 25 193 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a7d4802-9fbb-5656-9cab-c8d9e25d6232")
+	)
+	(text "2  MCU"
+		(exclude_from_sim no)
+		(at 115 40 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a4ec832-44d5-5ee1-af4d-ef67a42672f4")
+	)
+	(text "3  MCU"
+		(exclude_from_sim no)
+		(at 25 188 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "41e69529-adac-50f8-9364-176e863d2a20")
+	)
+	(text "2  Power"
+		(exclude_from_sim no)
+		(at 25 183 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "523910b5-5609-5aba-91cb-124212fa4406")
+	)
+	(text "6  RF"
+		(exclude_from_sim no)
+		(at 25 203 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "5987bb05-a5a2-5f22-8f97-81069d7718d1")
+	)
+	(text "SHEET MAP"
+		(exclude_from_sim no)
+		(at 25 176 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "691facc0-7c16-58e5-be11-1b3fa684a738")
+	)
+	(text "BME280 (I2C), switched 3-pin soil probe"
+		(exclude_from_sim no)
+		(at 60 198 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "9123a1dd-e3b6-523e-841f-269c0e59f0cb")
+	)
+	(text "SX1262, 32 MHz, DC-DC, SPI and control"
+		(exclude_from_sim no)
+		(at 60 193 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "92fda770-a017-5a4e-bc72-459ca6c4a271")
+	)
+	(text "6  RF"
+		(exclude_from_sim no)
+		(at 25 114 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1e0f2b3-4c5d-5e6f-8a90-1b2c3d4e5f60")
+	)
+	(text "hierarchical schematic - revision A"
+		(exclude_from_sim no)
+		(at 25 26.5 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8d6d2be-fd01-5976-8550-e7cc4a363407")
+	)
+	(text "LORA / BLE SENSOR NODE - REV A"
+		(exclude_from_sim no)
+		(at 25 22 0)
+		(effects
+			(font
+				(size 6 6)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad2a0f51-42c0-5aaf-a59c-6090f0c1d591")
+	)
+	(text "1  Power"
+		(exclude_from_sim no)
+		(at 25 40 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad3093f5-6c94-5b06-8744-2d99cf342d91")
+	)
+	(text "solar input, BQ25570 harvester, 3V3 boost, battery NTC"
+		(exclude_from_sim no)
+		(at 60 183 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "af71f633-3fc1-5831-8996-e4c9e2cac775")
+	)
+	(text "3  Radio"
+		(exclude_from_sim no)
+		(at 205 40 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "b01b8757-f27d-50f5-aaf1-5f91842475a1")
+	)
+	(text "868 MHz switchless match, harmonic filter, RX balun"
+		(exclude_from_sim no)
+		(at 60 203 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb7facd5-560a-56c9-bc0d-ce9775066f25")
+	)
+	(text "4  Sensors"
+		(exclude_from_sim no)
+		(at 295 40 0)
+		(effects
+			(font
+				(size 2.5 2.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd451984-71bf-59de-b4f6-b337e3999eee")
+	)
+	(text "nRF52840, 32 MHz + 32.768 kHz, DCDC1, decoupling, SWD"
+		(exclude_from_sim no)
+		(at 60 188 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "d872e829-41c3-5c09-8641-00a814d4210b")
+	)
+	(sheet
+		(at 205 45)
+		(size 70 45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3d9a5e21-6c4b-5f70-8a13-9e2b7c4d0f56")
+		(property "Sheetname" "Radio"
+			(at 205 44.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "radio.kicad_sch"
+			(at 205 90.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lora-node"
+				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 295 45)
+		(size 70 45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5c7e2a94-8b31-5d06-a7f2-4e9d1b6c3a08")
+		(property "Sheetname" "Sensors"
+			(at 295 44.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 295 90.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lora-node"
+				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25 45)
+		(size 70 45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5e0c7a10-9d2f-5a41-8f0e-6a0f2b7c9d31")
+		(property "Sheetname" "Power"
+			(at 25 44.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25 90.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lora-node"
+				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115 45)
+		(size 70 45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7b2d1c55-3f0a-5c8e-9d41-6a8b2e4f7c90")
+		(property "Sheetname" "MCU"
+			(at 115 44.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 115 90.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lora-node"
+				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25 120)
+		(size 70 45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9b4e6d1c-2f7a-5c83-b0d4-7a1e5f9c2b60")
+		(property "Sheetname" "RF"
+			(at 25 119.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rf.kicad_sch"
+			(at 25 165.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lora-node"
+				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

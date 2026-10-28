@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "lora-node") (type "KiCad") (uri "${KIPRJMOD}/lora-node.pretty") (options "") (descr "rev-A project footprints"))
+)
