@@ -12,7 +12,7 @@
 		(comment 1 "Off-grid agricultural sensor node - 868 MHz LoRa + BLE")
 	)
 	(lib_symbols)
-	(text "5  Sensors"
+	(text "4  Sensors"
 		(exclude_from_sim no)
 		(at 25 198 0)
 		(effects
@@ -23,7 +23,7 @@
 		)
 		(uuid "025c89f5-3519-555f-8272-7786f0b8a8a5")
 	)
-	(text "4  Radio"
+	(text "3  Radio"
 		(exclude_from_sim no)
 		(at 25 193 0)
 		(effects
@@ -45,7 +45,7 @@
 		)
 		(uuid "3a4ec832-44d5-5ee1-af4d-ef67a42672f4")
 	)
-	(text "3  MCU"
+	(text "2  MCU"
 		(exclude_from_sim no)
 		(at 25 188 0)
 		(effects
@@ -56,7 +56,7 @@
 		)
 		(uuid "41e69529-adac-50f8-9364-176e863d2a20")
 	)
-	(text "2  Power"
+	(text "1  Power"
 		(exclude_from_sim no)
 		(at 25 183 0)
 		(effects
@@ -67,7 +67,7 @@
 		)
 		(uuid "523910b5-5609-5aba-91cb-124212fa4406")
 	)
-	(text "6  RF"
+	(text "5  RF"
 		(exclude_from_sim no)
 		(at 25 203 0)
 		(effects
@@ -112,7 +112,7 @@
 		)
 		(uuid "92fda770-a017-5a4e-bc72-459ca6c4a271")
 	)
-	(text "6  RF"
+	(text "5  RF"
 		(exclude_from_sim no)
 		(at 25 114 0)
 		(effects
@@ -253,7 +253,7 @@
 		(instances
 			(project "lora-node"
 				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
-					(page "4")
+					(page "3")
 				)
 			)
 		)
@@ -299,7 +299,7 @@
 		(instances
 			(project "lora-node"
 				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
-					(page "5")
+					(page "4")
 				)
 			)
 		)
@@ -345,7 +345,7 @@
 		(instances
 			(project "lora-node"
 				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
-					(page "2")
+					(page "1")
 				)
 			)
 		)
@@ -391,7 +391,7 @@
 		(instances
 			(project "lora-node"
 				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
-					(page "3")
+					(page "2")
 				)
 			)
 		)
@@ -437,14 +437,14 @@
 		(instances
 			(project "lora-node"
 				(path "/1f7b3c40-5a2e-5d18-9c6b-3e9a4d2f7b60"
-					(page "6")
+					(page "5")
 				)
 			)
 		)
 	)
 	(sheet_instances
 		(path "/"
-			(page "1")
+			(page "0")
 		)
 	)
 	(embedded_fonts no)

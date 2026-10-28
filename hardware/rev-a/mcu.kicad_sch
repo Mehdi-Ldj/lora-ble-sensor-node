@@ -9,7 +9,7 @@
 		(date "2026-10-24")
 		(rev "A")
 		(company "Solo Engineering")
-		(comment 1 "nRF52840: 32 MHz + 32.768 kHz, DCDC1, decoupling, SWD")
+		(comment 1 "nRF52840: 32 MHz + 32.768 kHz, decoupling, SWD")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
@@ -3067,17 +3067,17 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "2 - DCDC1"
-		(exclude_from_sim no)
-		(at 157.48 44.958 0)
-		(effects
-			(font
-				(size 3 3)
-				(bold yes)
-			)
-			(justify left bottom)
+	(rectangle
+		(start 77.47 29.21)
+		(end 313.69 236.22)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(uuid "106fa286-4025-5e67-9f72-350c529f80e5")
+		(fill
+			(type none)
+		)
+		(uuid "f5e8e7f0-e068-465d-b502-72770c24e16f")
 	)
 	(text "LORA / BLE SENSOR NODE - REV A - MCU"
 		(exclude_from_sim no)
@@ -3102,9 +3102,9 @@
 		)
 		(uuid "6246a2c9-e109-5da7-9c4f-0c14fb62e75a")
 	)
-	(text "4 - SWD"
+	(text "1 - MICROCONTROLLER"
 		(exclude_from_sim no)
-		(at 110.16 184 0)
+		(at 156.718 37.338 0)
 		(effects
 			(font
 				(size 3 3)
@@ -3112,22 +3112,11 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b26b3684-3026-5b78-a338-ec28ae2b1f32")
+		(uuid "708c3b3d-6d04-436c-a2d1-98178624bcae")
 	)
-	(text "L19"
+	(text "2 - SWD"
 		(exclude_from_sim no)
-		(at 154.686 106.426 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b40a41a1-470a-51ca-aaa2-f2fc5814a23b")
-	)
-	(text "3 - DECOUPLING"
-		(exclude_from_sim no)
-		(at 71.882 57.404 0)
+		(at 93.472 202.438 0)
 		(effects
 			(font
 				(size 3 3)
@@ -3135,18 +3124,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "dddf0779-c0d6-577c-875c-1cf53edcecb6")
-	)
-	(text "4.7nH"
-		(exclude_from_sim no)
-		(at 152.908 103.408 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e9a7017c-ce9d-51c9-a090-1987f772d19c")
+		(uuid "d63743c9-5cbb-497c-bc51-2779b7389871")
 	)
 	(junction
 		(at 274.32 105.41)
@@ -3281,7 +3259,7 @@
 		(uuid "cfa84c31-e58c-5bd6-84bb-f7a1392b5d80")
 	)
 	(junction
-		(at 111.76 204.47)
+		(at 95.25 214.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d84f2b0f-be53-5280-b5a2-b91bcd21f233")
@@ -3590,7 +3568,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 199.39) (xy 132.08 199.39)
+			(xy 111.76 209.55) (xy 115.57 209.55)
 		)
 		(stroke
 			(width 0)
@@ -3740,7 +3718,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 204.47) (xy 132.08 204.47)
+			(xy 111.76 214.63) (xy 115.57 214.63)
 		)
 		(stroke
 			(width 0)
@@ -3770,7 +3748,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 201.93) (xy 111.76 201.93)
+			(xy 99.06 212.09) (xy 95.25 212.09)
 		)
 		(stroke
 			(width 0)
@@ -3820,7 +3798,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 204.47) (xy 111.76 204.47)
+			(xy 99.06 214.63) (xy 95.25 214.63)
 		)
 		(stroke
 			(width 0)
@@ -3890,7 +3868,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 201.93) (xy 111.76 209.55)
+			(xy 95.25 212.09) (xy 95.25 219.71)
 		)
 		(stroke
 			(width 0)
@@ -3980,7 +3958,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 201.93) (xy 132.08 201.93)
+			(xy 111.76 212.09) (xy 115.57 212.09)
 		)
 		(stroke
 			(width 0)
@@ -4450,7 +4428,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 199.39) (xy 111.76 199.39)
+			(xy 99.06 209.55) (xy 95.25 209.55)
 		)
 		(stroke
 			(width 0)
@@ -4769,7 +4747,7 @@
 		(uuid "3939512d-c943-5aae-a4f5-fb0b054dec93")
 	)
 	(label "SWDIO"
-		(at 132.08 199.39 0)
+		(at 115.57 209.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4799,7 +4777,7 @@
 		(uuid "63e7d594-700a-5cef-9615-9bb9aa38beb2")
 	)
 	(label "SWDCLK"
-		(at 132.08 201.93 0)
+		(at 115.57 212.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4809,7 +4787,7 @@
 		(uuid "69e6f76f-86d2-5f95-8e28-a1097a5b8f2b")
 	)
 	(label "RESET"
-		(at 132.08 204.47 0)
+		(at 115.57 214.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5388,7 +5366,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C76915"
 			(at 161.29 107.95 0)
 			(hide yes)
@@ -5503,7 +5480,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C91633"
 			(at 138.43 104.14 0)
 			(hide yes)
@@ -5622,7 +5598,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C98055"
 			(at 166.37 50.8 0)
 			(hide yes)
@@ -5737,7 +5712,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C29936"
 			(at 97.79 80.01 0)
 			(hide yes)
@@ -5852,7 +5826,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C5339095"
 			(at 146.05 154.94 0)
 			(hide yes)
@@ -5974,7 +5947,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C19666"
 			(at 266.7 64.77 0)
 			(hide yes)
@@ -6089,7 +6061,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C1525"
 			(at 143.51 80.01 0)
 			(hide yes)
@@ -6118,7 +6089,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
-		(at 120.65 201.93 0)
+		(at 104.14 212.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6128,7 +6099,7 @@
 		(dnp no)
 		(uuid "2f958360-9fcb-51a6-8e2a-7bf7d8d1bb8e")
 		(property "Reference" "J3"
-			(at 115.57 207.01 0)
+			(at 99.06 217.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6139,7 +6110,7 @@
 			)
 		)
 		(property "Value" "2x3 1.27"
-			(at 115.57 209.55 0)
+			(at 99.06 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6150,7 +6121,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD"
-			(at 120.65 201.93 0)
+			(at 104.14 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6161,7 +6132,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1e6da833c9822e59490a6a02feaea05e.pdf?productCode=C3975186"
-			(at 120.65 201.93 0)
+			(at 104.14 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6172,7 +6143,7 @@
 			)
 		)
 		(property "Description" "Pin Header 6 Position 1.27mm Pitch Dual Row Surface Mount -40℃~+105℃"
-			(at 120.65 201.93 0)
+			(at 104.14 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6183,7 +6154,7 @@
 			)
 		)
 		(property "Manufacturer" "HCTL"
-			(at 0 0 0)
+			(at -16.51 10.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6194,7 +6165,7 @@
 			)
 		)
 		(property "MPN" "PZ127-2-03-S"
-			(at 0 0 0)
+			(at -16.51 10.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6204,9 +6175,8 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C3975186"
-			(at 120.65 201.93 0)
+			(at 104.14 212.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6410,7 +6380,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C99010"
 			(at 266.7 92.71 0)
 			(hide yes)
@@ -6604,7 +6573,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C1525"
 			(at 297.18 64.77 0)
 			(hide yes)
@@ -6720,7 +6688,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C1525"
 			(at 220.98 64.77 0)
 			(hide yes)
@@ -6912,7 +6879,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C1525"
 			(at 281.94 64.77 0)
 			(hide yes)
@@ -7018,7 +6984,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 111.76 199.39 0)
+		(at 95.25 209.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7028,7 +6994,7 @@
 		(dnp no)
 		(uuid "80a4cb6e-0ac7-5e7a-9d5b-052de9bf0178")
 		(property "Reference" "#PWR108"
-			(at 114.3 198.12 0)
+			(at 97.79 208.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7040,7 +7006,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 111.76 196.85 0)
+			(at 95.25 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7051,7 +7017,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 199.39 0)
+			(at 95.25 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7062,7 +7028,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 199.39 0)
+			(at 95.25 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7073,7 +7039,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 199.39 0)
+			(at 95.25 209.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7183,7 +7149,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C106201"
 			(at 259.08 100.33 0)
 			(hide yes)
@@ -7376,7 +7341,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C190794"
 			(at 199.39 149.86 0)
 			(hide yes)
@@ -7784,7 +7748,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C106201"
 			(at 138.43 162.56 0)
 			(hide yes)
@@ -7813,7 +7776,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 209.55 0)
+		(at 95.25 219.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7823,7 +7786,7 @@
 		(dnp no)
 		(uuid "a5089897-5edc-5eb1-bdc3-923508d06578")
 		(property "Reference" "#PWR109"
-			(at 114.3 208.28 0)
+			(at 97.79 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7835,7 +7798,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 212.09 0)
+			(at 95.25 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7846,7 +7809,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 209.55 0)
+			(at 95.25 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7857,7 +7820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 209.55 0)
+			(at 95.25 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7868,7 +7831,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 209.55 0)
+			(at 95.25 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7978,7 +7941,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C194437"
 			(at 180.34 50.8 0)
 			(hide yes)
@@ -8093,7 +8055,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C106201"
 			(at 156.21 162.56 0)
 			(hide yes)
@@ -8210,8 +8171,7 @@
 		(dnp no)
 		(uuid "c2f97277-9771-5ce4-b3a0-2125bbcc4754")
 		(property "Reference" "L19"
-			(at 158.75 102.87 0)
-			(hide yes)
+			(at 157.988 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8222,8 +8182,7 @@
 			)
 		)
 		(property "Value" "4.7nH"
-			(at 158.75 105.41 0)
-			(hide yes)
+			(at 158.75 102.108 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8288,7 +8247,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C98064"
 			(at 156.21 104.14 0)
 			(hide yes)
@@ -8404,7 +8362,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C106201"
 			(at 274.32 100.33 0)
 			(hide yes)
@@ -8519,7 +8476,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C76911"
 			(at 151.13 107.95 0)
 			(hide yes)
@@ -8635,7 +8591,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C1525"
 			(at 236.22 64.77 0)
 			(hide yes)
@@ -8750,7 +8705,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C76899"
 			(at 124.46 107.95 0)
 			(hide yes)
@@ -8865,7 +8819,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C29936"
 			(at 120.65 80.01 0)
 			(hide yes)
@@ -8980,7 +8933,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C272875"
 			(at 109.22 80.01 0)
 			(hide yes)
@@ -9173,7 +9125,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C19666"
 			(at 251.46 64.77 0)
 			(hide yes)
@@ -9288,7 +9239,6 @@
 				)
 			)
 		)
-
 		(property "LCSC" "C1525"
 			(at 132.08 80.01 0)
 			(hide yes)
