@@ -10,12 +10,13 @@ one board.
 
 | Schematic | Board |
 |:---:|:---:|
-| [Schematic, six pages (PDF)](docs/renders/schematic-rev-a.pdf) | [Open the board in KiCanvas][kicanvas-pcb] |
+| [Schematic, six pages (PDF)](docs/renders/schematic-rev-a.pdf) | [Open the project in KiCanvas][kicanvas] |
 
-The PDF carries the whole hierarchy. KiCanvas is a read-only browser viewer for
-the board, with no KiCad installation required.
+KiCanvas loads the whole project in the browser: the board opens first, and the
+five sheets are one click away in its Project panel. No KiCad installation
+required. The PDF is the quickest way to read the schematic end to end.
 
-[kicanvas-pcb]: https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMehdi-Ldj%2Flora-ble-sensor-node%2Fblob%2Fmain%2Fhardware%2Frev-a%2Flora-node.kicad_pcb
+[kicanvas]: https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FMehdi-Ldj%2Flora-ble-sensor-node%2Ftree%2Fmain%2Fhardware%2Frev-a
 
 ## Overview
 
