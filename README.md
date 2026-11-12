@@ -48,7 +48,7 @@ keepout that no layer may cross.
 - **TPS61099** 3.3 V boost from a single-cell 14500 LiFePO4
 - Battery PTC, reverse-polarity protection, current-measure jumper and NTC divider
 - **BME280** environment sensor and a switched analog soil probe
-- SWD debug header, six test points, three fiducials
+- SWD debug header, eight test points, three fiducials
 - 96 parts across five hierarchical sheets
 
 ## Board specifications
@@ -60,8 +60,12 @@ keepout that no layer may cross.
 | Copper | 1 oz outer and inner, ENIG finish, green mask, white silk |
 | Minimum feature | 0.20 mm track, 0.15 mm clearance, 0.20 mm drill |
 | Vias | 0.30/0.20 mm and 0.20/0.20 mm, tented, no blind or buried |
-| Impedance | 50 Ω ±10 % single-ended, In1.Cu reference |
+| Impedance | 50 Ω ±10 % single-ended, In1.Cu reference — design value, see below |
 | Assembly | JLCPCB Standard PCBA, 2 prototypes |
+
+The 50 Ω is the requested impedance control, not a measurement: JLC's impedance
+report and a test coupon are still outstanding, and nothing on this board has
+been measured — [`docs/impedance.md`](docs/impedance.md) tracks that.
 
 ## Architecture
 
@@ -122,7 +126,7 @@ aQFN73 and the BME280 both have pads underneath.
 |---|---|
 | `hardware/rev-a/` | KiCad 10 project: five schematic sheets, PCB, symbol and footprint libraries, 3D models |
 | `simulation/` | Coplanar-waveguide pre-check for the 868 MHz feed, and the plan for the 3D model |
-| `docs/` | [Assembly](docs/assembly-notes.md), [fabrication](docs/fab-notes.md) and [PCBA](docs/pcba-notes.md) notes, [stackup](docs/stackup.md), [impedance](docs/impedance.md), schematic PDF |
+| `docs/` | [BOM](docs/BOM.md), [assembly](docs/assembly-notes.md), [fabrication](docs/fab-notes.md) and [PCBA](docs/pcba-notes.md) notes, [stackup](docs/stackup.md), [impedance](docs/impedance.md), schematic PDF |
 | `firmware/` | Reserved for the node firmware |
 
 Open the project with KiCad 10:
